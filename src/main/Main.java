@@ -30,7 +30,7 @@ public class Main  {
 	        new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(usernamePath)));
 	        WebElement username = driver.findElement(By.xpath(usernamePath));
 	     
-	        username.sendKeys("y0y0yu@yandex.com");
+	        username.sendKeys("xyz@email.com");
 	        String login="//*[@id=\"root\"]/div/div/div[2]/div/div/div[3]/div[2]/div/div/div[1]/form/div[3]/button[1]";
 	        driver.findElement(By.xpath(login)).click();
 	    
@@ -38,7 +38,7 @@ public class Main  {
 	        new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(passwordPath)));
 	        WebElement password = driver.findElement(By.xpath(passwordPath));
 	     
-	        password.sendKeys("damnpotato");
+	        password.sendKeys("yourpassword");
 	        login="//*[@id=\"root\"]/div/div/div[2]/div/div/div[3]/div[2]/div/div/form/div[2]/button[1]";
 	        driver.findElement(By.xpath(login)).click();
 
